@@ -1,0 +1,28 @@
+[project]
+name = "crossfit-knowledge-llm"
+version = "0.1.0"
+authors = [
+    {name = "josumsc",email = "josu93alonso@gmail.com"}
+]
+requires-python = ">=3.12, <4.0"
+dependencies = [
+    "langchain (>=0.3.19,<0.4.0)",
+    "langchain-openai (>=0.3.6,<0.4.0)",
+    "langchain-community (>=0.3.18,<0.4.0)",
+    "langchain-text-splitters (>=0.3.6,<0.4.0)",
+    "langchain-postgres (>=0.0.13,<0.0.14)",
+    "jupyterlab (>=4.3.5,<5.0.0)",
+    "python-dotenv (>=1.0.1,<2.0.0)",
+    "langchain-google-genai (>=2.0.10,<3.0.0)",
+    "beautifulsoup4 (>=4.13.3,<5.0.0)",
+    "pypdf (>=5.3.0,<6.0.0)"
+]
+
+[tool.poetry]
+package-mode = false
+packages = [{include = "utils", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
